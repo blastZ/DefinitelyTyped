@@ -234,6 +234,8 @@ declare class Session extends BaseModel {
 }
 
 declare class Grant extends BaseModel {
+    constructor(properties?: { clientId?: string; accountId?: string });
+    
     accountId?: string;
     clientId?: string;
     openid?: {
